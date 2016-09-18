@@ -1,0 +1,95 @@
+name {font-family: american typewriter;
+	font-weight: lighter;
+	font-size: 36px;
+	}
+
+descript {font-family: american typewriter;
+	font-weight: lighter;
+	font-size: 14px;
+	}
+
+indexname {font-family: american typewriter;
+	font-weight: lighter;
+	font-size: 75px;
+	}
+
+indexdescript {font-family: american typewriter;
+	font-weight: lighter;
+	font-size: 30px;
+	}
+
+
+h3 {font-family: american typewriter;
+	font-weight: lighter;
+	font-color: black;
+	font-size: 19px;
+	}
+
+
+categories {font-family: american typewriter;
+	font-weight: lighter;
+	font-color: black;
+	font-size: 19px;
+	}
+
+h6 {font-family: american typewriter;
+	font-weight: lighter;
+	font-color: black;
+	font-size: 41px;
+	}
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: #7F7F7F;
+
+}
+
+a:active {
+    color: #eee9e9;
+}
+
+#motion {
+	padding-left: 20px;
+}
+
+
+#bigintro {
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    width:30em;
+    height:18em;
+    margin-top: -9em; /*set to a negative number 1/2 of your height*/
+    margin-left: -15em; /*set to a negative number 1/2 of your width*/
+    border: 1px solid #ccc;
+    background-color: #f3f3f3;
+}
+
+
+captions {
+font-family: american typewriter;
+	font-weight: lighter;
+	font-size: 19px;
+	text-align: right;
+
+}
+
+pagetitle {font-family: american typewriter;
+	font-weight: lighter;
+	font-size: 60px;
+	}
+
+img {
+    image-orientation: from-image;
+}
+
+
