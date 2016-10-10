@@ -1,0 +1,35 @@
+h1 {
+	font-family: american typewriter;
+   font-weight: lighter;
+   font-size: 36px;
+   text-align: center;
+}
+h2{
+   font-family: american typewriter;
+   font-weight: lighter;
+   font-size: 50px;
+   text-align: center;
+}
+h3 {
+   font-family: american typewriter;
+   font-weight: lighter;
+   font-size: 20px;
+   text-align: center;
+}
+
+#leftHalf {
+   float: left;
+   width: 50%;
+   position: absolute;
+   left: 0px;
+   height: 100%;
+}
+
+#rightHalf {
+   float: right;
+   width: 50%;
+   position: absolute;
+   right: 0px;
+   height: 100%;
+}
+
