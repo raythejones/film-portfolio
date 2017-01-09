@@ -1,38 +1,42 @@
-name {font-family: american typewriter;
+h9 {font-family: courier new;
 	font-weight: lighter;
 	font-size: 36px;
+	text-align: center;
 	}
 
-descript {font-family: american typewriter;
+descript {font-family: courier new;
 	font-weight: lighter;
 	font-size: 14px;
 	}
 
-indexname {font-family: american typewriter;
+h1 {font-family: courier new;
 	font-weight: lighter;
 	font-size: 75px;
+	text-align: center;
 	}
 
-indexdescript {font-family: american typewriter;
+h2 {font-family: courier new;
 	font-weight: lighter;
 	font-size: 30px;
+		text-align: center;
+
 	}
 
 
-h3 {font-family: american typewriter;
+h3 {font-family: courier new;
 	font-weight: lighter;
 	font-color: black;
 	font-size: 19px;
 	}
 
 
-categories {font-family: american typewriter;
+categories {font-family: courier new;
 	font-weight: lighter;
 	font-color: black;
 	font-size: 19px;
 	}
 
-h6 {font-family: american typewriter;
+h6 {font-family: courier new;
 	font-weight: lighter;
 	font-color: black;
 	font-size: 41px;
@@ -74,16 +78,21 @@ a:active {
     background-color: #f3f3f3;
 }
 
+.mainthing {
+	align-items: center;
+	
+}
+
 
 captions {
-font-family: american typewriter;
+font-family: courier new;
 	font-weight: lighter;
 	font-size: 19px;
 	text-align: right;
 
 }
 
-pagetitle {font-family: american typewriter;
+pagetitle {font-family: courier new;
 	font-weight: lighter;
 	font-size: 60px;
 	}
@@ -91,5 +100,6 @@ pagetitle {font-family: american typewriter;
 img {
     image-orientation: from-image;
 }
+
 
 
