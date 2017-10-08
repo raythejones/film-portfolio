@@ -1,3 +1,29 @@
+.pictureContainer {
+  background: url(../youtube_pfp.png);
+  width: 256px;
+  height: 256px;
+  border-radius: 50%;
+  display: inline-block;
+      -o-transition:1s;
+  -ms-transition:1s;
+  -moz-transition:1s;
+  -webkit-transition:1s;
+  /* ...and now for the proper property */
+  transition:1s;
+}
+.pictureContainer:hover {
+  background: url(../youtube_fade.png);
+    -o-transition:1s;
+  -ms-transition:1s;
+  -moz-transition:1s;
+  -webkit-transition:1s;
+  /* ...and now for the proper property */
+  transition:1s;
+
+}
+
+
+
 h9 {font-family: courier new;
 	font-weight: lighter;
 	font-size: 36px;
