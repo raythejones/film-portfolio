@@ -12,7 +12,8 @@
   transition:1s;
 }
 .pictureContainer:hover {
-  background: url(../youtube_fade.png);
+  background: url(../youtube_fade2.png);
+
     -o-transition:1s;
   -ms-transition:1s;
   -moz-transition:1s;
