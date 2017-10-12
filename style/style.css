@@ -1,3 +1,8 @@
+#daBar {
+box-shadow: inset 0px 0px 50px -50px #D4D4CC, inset 0px -50px 50px -50px #D4D4CC;
+position: fixed;
+}
+
 .pictureContainer {
   background: url(../youtube_pfp.png);
   width: 256px;
@@ -38,6 +43,16 @@
   transition:1s;
 }
 
+.grad {
+height: 10px;
+width: 100%;
+bottom: 0px;
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(red, yellow); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(red, yellow); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(red, yellow); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(red, yellow); /* Standard syntax */
+}
 h9 {font-family: courier new;
 	font-weight: lighter;
 	font-size: 36px;
