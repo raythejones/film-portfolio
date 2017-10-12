@@ -4,6 +4,9 @@
 
 <title>ray jones</title>
 <link rel="shortcut icon" href="icons/favicon.png" />
+
+
+
 </head>
 <body>
 
@@ -20,13 +23,10 @@
 		});
 		</script>
 
-
 <!-- HEADER-->
-<div id= "daBar" style="width: 100%; overflow: hidden; position: fixed; background-color: white; top: 0;">
-<script>
-$(document).scroll(function() {
-    $('#daBar').toggle($(this).scrollTop()>1000)
- });​ </script>
+<div style="width: 100%; overflow: hidden; position: fixed; background-color: white; top: 0;">
+
+
  <a href="/"><div style="width: 600px; float: left;">   <div class="pictureContainer2" style=" float: left;"> </div>
 
 
@@ -42,11 +42,28 @@ $(document).scroll(function() {
 		</table>
 
  </div></a>
-    <div style="float: right;"> <pagetitle align="right"><descript><br></descript>video&nbsp&nbsp&nbsp</pagetitle> </div>
+    <div style="float: right;"> <pagetitle align="right"><descript><br></descript>timelapses&nbsp&nbsp&nbsp</pagetitle> </div>
+<script>
+$('#daBar').hide();
+
+$(window).scroll(function() {
+    if ($(this).scrollTop()>0)
+     {
+        $('#daBar').fadeIn();
+     }
+    else
+     {
+      $('#daBar').fadeOut();
+     }
+ });
+</script>
+<div id= "daBar" style="width: 100%; height: 140px; overflow: hidden; position: fixed;  top-padding: 100;"></div>
+
 </div>
 
 
 <br><br><br><br><br><br><br><br><br><br>
+
 
 
 

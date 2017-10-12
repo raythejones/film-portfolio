@@ -1,6 +1,7 @@
 #daBar {
 box-shadow: inset 0px 0px 50px -50px #D4D4CC, inset 0px -50px 50px -50px #D4D4CC;
 position: fixed;
+display: none;
 }
 
 .pictureContainer {
