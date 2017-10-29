@@ -56,9 +56,6 @@ $(window).scroll(function() {
 
 
 <!-- VIDEO ONE-->
-<!-- Trigger/Open The Modal -->
-<!-- <button id="myBtn">Open Modal</button>
-
 <!-- The Modal -->
 <div id="myModal" class="modal">
 
@@ -119,12 +116,6 @@ $(window).scroll(function() {
     </div>
   </div>
 </div>
-
-
-
-
-
-
 		<div align="left">
 		<table>
 		<td>
@@ -139,6 +130,25 @@ $(window).scroll(function() {
 		<br><br><br><br><br>
 		
 <!-- VIDEO THREE-->
+<div id="myModal3" class="modal">
+
+
+  <!-- Modal content -->
+  <div class="modal-content" >
+      <span2 class="close3">&times;</span2>
+
+    <div class="modal-header">
+      <h8>Killer</h8>
+    </div>
+    <div class="modal-body">
+      <p><iframe align="center" width="960" height="540" src="https://www.youtube.com/embed/x7tI2RQcECo?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+</p>
+    </div>
+    <div class="modal-footer">
+      <h3>Gun violence is a terrifying problem in our society. I made this movie to explore the fear and uncertainty that I certainly feel, and I think is felt in the country today.</h3>
+    </div>
+  </div>
+</div>
 
 		<div align="right">
 		<table>
@@ -147,7 +157,7 @@ $(window).scroll(function() {
 			summer 2015&nbsp&nbsp<br><br><br><br><br><br><br></captions>
 		</td>
 		<td>
-					<iframe width="640" height="360" src="https://www.youtube.com/embed/x7tI2RQcECo?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+		<img width="640" src="thumbnails/killerthumb.png" id="myImg3">
 
 		</td>
 		</table>
@@ -156,10 +166,29 @@ $(window).scroll(function() {
 
 
 <!-- VIDEO FOUR-->
+	<div id="myModal4" class="modal">
+
+
+  <!-- Modal content -->
+  <div class="modal-content" >
+      <span2 class="close4">&times;</span2>
+
+    <div class="modal-header">
+      <h8>snow in brooklyn</h8>
+    </div>
+    <div class="modal-body">
+      <p><iframe align="center" width="960" height="540" src="https://www.youtube.com/embed/nXBW0kGxYfg?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+</p>
+    </div>
+    <div class="modal-footer">
+      <h3>The first snow of winter 2015 in Brooklyn, NY.</h3>
+    </div>
+  </div>
+</div>
 		<div align="left">
 		<table>
 		<td>
-		<iframe width="640" height="360" src="https://www.youtube.com/embed/nXBW0kGxYfg?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+		<img width="640" src="thumbnails/snowthumb.png" id="myImg4">
 		</td>
 		<td>
 		<captions align="left"><br><br><br><br><br><br><br><indexdescript>&nbsp&nbspsnow in brooklyn</indexdescript><br>
@@ -176,16 +205,22 @@ $(window).scroll(function() {
 // Get the modal
 var modal = document.getElementById('myModal');
 var modal2 = document.getElementById('myModal2');
+var modal3 = document.getElementById('myModal3');
+var modal4 = document.getElementById('myModal4');
 
 // Get the button that opens the modal
 var img = document.getElementById("myImg");
 var img2 = document.getElementById("myImg2");
+var img3 = document.getElementById("myImg3");
+var img4 = document.getElementById("myImg4");
 
 
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 var span2 = document.getElementsByClassName("close2")[0];
+var span3 = document.getElementsByClassName("close3")[0];
+var span4 = document.getElementsByClassName("close4")[0];
 
 // When the user clicks the button, open the modal 
 img.onclick = function() {
@@ -194,7 +229,12 @@ img.onclick = function() {
 img2.onclick = function() {
     modal2.style.display = "block";
 }
-
+img3.onclick = function() {
+    modal3.style.display = "block";
+}
+img4.onclick = function() {
+    modal4.style.display = "block";
+}
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
     modal.style.display = "none";
@@ -202,13 +242,20 @@ span.onclick = function() {
 }
 span2.onclick = function() {
     modal2.style.display = "none";
-
+}
+span3.onclick = function() {
+    modal3.style.display = "none";
+}
+span4.onclick = function() {
+    modal4.style.display = "none";
 }
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
         modal2.style.display = "none";
+        modal3.style.display = "none";
+        modal4.style.display = "none";
     }
 }
 </script>
