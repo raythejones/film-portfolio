@@ -294,6 +294,8 @@ img {
     cursor: pointer;
 }
 .modal-header {
+    padding-top: 5px;
+    padding-bottom: 5px;
     padding: 2px 16px;
     background-color: #04FF82;
     color: black;
@@ -305,11 +307,12 @@ font-family: courier new;
   font-size: 40px;
     text-align: center;
 }
-.modal-body {padding: 2px 16px;
+.modal-body {
+    padding: 2px 16px;
 
    position:relative;
     padding-bottom:46.25%;
-    padding-top:30px;
+    padding-top:5%;
     height:0;
     overflow:hidden;
  
@@ -317,10 +320,10 @@ font-family: courier new;
 .modal-body iframe, .modal-body object, .modal-body embed {
     position:absolute;
  
- left: 5%;
- top: 5%;
-    width:90%;
-    height:90%;
+ left: 10%;
+ top: 10%;
+    width:80%;
+    height:80%;
 }
 
 .modal-footer {
