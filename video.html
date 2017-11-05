@@ -4,7 +4,45 @@
 
 <title>ray jones</title>
 <link rel="shortcut icon" href="icons/favicon.png" />
+<style>
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
 
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 400px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+        bottom: 100%;
+    left: 50%; 
+    margin-left: -200px; /* Use half of the width (120/2 = 60), to center the tooltip */
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+.tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+</style>
 
 
 </head>
@@ -13,7 +51,6 @@
 
 <!-- HEADER-->
 <div style="width: 100%; overflow: hidden; position: fixed; background-color: white; top: 0;">
-
 
  <a href="/"><div style="width: 600px; float: left;">   <div class="pictureContainer2" style=" float: left;"> </div>
 
@@ -72,7 +109,7 @@ $(window).scroll(function() {
 </p>
     </div>
     <div class="modal-footer">
-      <h3>This movie was made with Steven Orlofsky with help from Dianne Hudson. We made this movie as part of a project at the DOROT Community Center for an oral history project about Jews during WWII. Some of the formatting and imagery corresponds to their standards.</h3>
+      <h4>This movie was made with Steven Orlofsky with help from Dianne Hudson. We made this movie as part of a project at the DOROT Community Center for an oral history project about Jews during WWII. Some of the formatting and imagery corresponds to their standards.</h4>
     </div>
   </div>
 </div>
@@ -145,7 +182,7 @@ $(window).scroll(function() {
 </p>
     </div>
     <div class="modal-footer">
-      <h3>Gun violence is a terrifying problem in our society. I made this movie to explore the fear and uncertainty that I certainly feel, and I think is felt in the country today.</h3>
+      <h4>I am very aware of the terrible and terrifying issue of gun violence in our society. The somewhat graphic imagery in this dramatazation is an exploration of the fear that I and so many others certainly feel in the country today.</h4>
     </div>
   </div>
 </div>
@@ -154,7 +191,14 @@ $(window).scroll(function() {
 		<table>
 		<td align="right">
 		<captions><indexdescript><br><br><br><br><br><br><br><br>killer</indexdescript>&nbsp&nbsp<br>
-			summer 2015&nbsp&nbsp<br><br><br><br><br><br><br></captions>
+			summer 2015&nbsp&nbsp<br><br><br><br><br><br>
+
+
+			<div class="tooltip">Artist's Statement  <span class="tooltiptext">I am very aware of the terrible and terrifying issue of gun violence in our society. The somewhat graphic imagery in this dramatazation is an exploration of the fear that I and so many others certainly feel in the country today.</span>
+</div>
+</captions>
+
+
 		</td>
 		<td>
 		<img width="640" src="thumbnails/killerthumb.png" id="myImg3">

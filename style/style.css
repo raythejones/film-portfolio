@@ -80,10 +80,16 @@ h2 {font-family: courier new;
 
 
 h3 {font-family: courier new;
-	font-weight: lighter;
+    font-weight: lighter;
 	font-color: black;
 	font-size: 19px;
 	}
+
+
+h4 {font-family: courier new;
+    font-color: black;
+    font-size: 19px;
+    }
 
 
 categories {font-family: courier new;
@@ -239,25 +245,25 @@ img {
 
 /* The Close Button */
 .close {
-    color: white;
+    color: black;
     float: right;
     font-size: 28px;
     font-weight: bold;
 }
 .close2 {
-    color: white;
+    color: black;
     float: right;
     font-size: 28px;
     font-weight: bold;
 }
 .close3 {
-    color: white;
+    color: black;
     float: right;
     font-size: 28px;
     font-weight: bold;
 }
 .close4 {
-    color: white;
+    color: black;
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -265,32 +271,32 @@ img {
 
 .close:hover,
 .close:focus {
-    color: #000;
+    color: #fff;
     text-decoration: none;
     cursor: pointer;
 }
 .close2:hover,
 .close2:focus {
-    color: #000;
+    color: #fff;
     text-decoration: none;
     cursor: pointer;
 }
 .close3:hover,
 .close3:focus {
-    color: #000;
+    color: #fff;
     text-decoration: none;
     cursor: pointer;
 }
 .close4:hover,
 .close4:focus {
-    color: #000;
+    color: #fff;
     text-decoration: none;
     cursor: pointer;
 }
 .modal-header {
     padding: 2px 16px;
-    background-color: #5cb85c;
-    color: white;
+    background-color: #04FF82;
+    color: black;
 }
 
 h8 {
@@ -300,12 +306,137 @@ font-family: courier new;
     text-align: center;
 }
 .modal-body {padding: 2px 16px;
-      text-align: center;
 
+   position:relative;
+    padding-bottom:46.25%;
+    padding-top:30px;
+    height:0;
+    overflow:hidden;
+ 
+}
+.modal-body iframe, .modal-body object, .modal-body embed {
+    position:absolute;
+ 
+ left: 13%;
+ top: 13%;
+    width:75%;
+    height:75%;
 }
 
 .modal-footer {
     padding: 2px 16px;
-    background-color: #5cb85c;
-    color: white;
+    background-color: #04FF82;
     text-align: center;
+
+    
+    
+    
+    
+    
+    
+    
+
+#rig {
+    max-width:100%;
+    margin:0 auto; /*center aligned*/
+    padding:0;
+    font-size:0; /* Remember to change it back to normal font size if have captions */
+    list-style:none;
+    background-color:#000;
+}
+#rig li {
+    display: inline-block;
+    *display:inline;/*for IE6 - IE7*/
+    width:25%;
+    vertical-align:middle;
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+        
+/* The wrapper for each item */
+.rig-cell {
+    /*margin:12px;
+    box-shadow:0 0 6px rgba(0,0,0,0.3);*/
+    display:block;
+    position: relative;
+    overflow:hidden;
+    font-family: courier new;
+    font-weight: lighter;
+}
+        
+/* If have the image layer */
+.rig-img {
+    display:block;
+    width: 100%;
+    height: auto;
+    border:none;
+    transform:scale(1);
+    transition:all 1s;
+}
+
+#rig li:hover .rig-img {
+    transform:scale(1.05);
+}
+        
+/* If have the overlay layer */
+.rig-overlay {
+    position: absolute;
+    display:block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background: #3DC0F1 url(img/link.png) no-repeat center 20%;
+    background-size:50px 50px;
+    opacity:0;
+    filter:alpha(opacity=0);/*For IE6 - IE8*/
+    transition:all 0.6s;
+}
+#rig li:hover .rig-overlay {
+    opacity:0.8;
+}
+
+/* If have captions */
+.rig-text {
+    display:block;
+    padding:0 30px;
+    box-sizing:border-box;
+    position:absolute;
+    left:0;
+    width:100%;
+    text-align:center;
+    text-transform:capitalize;
+    font-size:18px;
+    font-family: verdana;
+    font-weight: lighter;
+    top:40%;	
+    color:white;
+    opacity:0;
+    filter:alpha(opacity=0);/*For older IE*/
+    transform:translateY(-20px);
+    transition:all .3s;
+}
+#rig li:hover .rig-text {
+    transform:translateY(0px);
+    opacity:0.9;
+}
+
+@media (max-width: 9000px) {
+    #rig li {
+        width:25%;
+    }
+}
+
+@media (max-width: 700px) {
+    #rig li {
+        width:33.33%;
+    }
+}
+
+@media (max-width: 550px) {
+    #rig li {
+        width:50%;
+    }
+} 
