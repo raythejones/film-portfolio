@@ -1,6 +1,129 @@
 <html>
-<head><link rel="stylesheet" type="text/css" href="style/style.css">
+<head><link rel="stylesheet" type="text/css" href="style/style.css"><style>#rig {
+    max-width:100%;
+    margin:0 auto; /*center aligned*/
+    padding:0;
+    font-size:0; /* Remember to change it back to normal font size if have captions */
+    list-style:none;
+    background-color:#fff;
+}
+#rig li {
+    display: inline-block;
+    *display:inline;/*for IE6 - IE7*/
+    width:50%;
+    vertical-align:middle;
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+        
+/* The wrapper for each item */
+.rig-cell {
+A    box-shadow:0 0 6px rgba(0,0,0,0.3);*/
+    display:block;
+    position: relative;
+    overflow:hidden;
+text-align: center;
+}
+        
+/* If have the image layer */
+.rig-img {
+    display:block;
+    width: 100%;
+    height: auto;
+    border:none;
+    transform:scale(1);
+    transition:all 1s;
+}
 
+#rig li:hover .rig-img {
+   <!-- transform:scale(1.05); -->
+}
+        
+/* If have the overlay layer */
+.rig-overlay {
+    position: absolute;
+    display:block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background: #3DC0F1 url(img/link.png) no-repeat center 20%;
+    background-size:50px 50px;
+    opacity:0;
+    filter:alpha(opacity=0);/*For IE6 - IE8*/
+    transition:all 0.6s;
+}
+#rig li:hover .rig-overlay {
+    opacity:0.8;
+}
+
+/* If have captions */
+.rig-text {
+    display:block;
+    padding:0 30px;
+    box-sizing:border-box;
+    position:absolute;
+    left:0;
+    width:100%;
+    text-align:center;
+    text-transform:capitalize;
+    font-size:18px;
+    font-weight:bold;
+    font-family: 'Oswald', sans-serif;
+    font-weight:normal!important;
+    top:40%;
+    color:white;
+    opacity:0;
+    filter:alpha(opacity=0);/*For older IE*/
+    transform:translateY(-20px);
+    transition:all .3s;
+}
+#rig li:hover .rig-text {
+    transform:translateY(0px);
+    opacity:0.9;
+}
+
+@media (max-width: 9000px) {
+    #rig li {
+        width:33.33%;
+    }
+}
+
+@media (max-width: 700px) {
+    #rig li {
+        width:33.33%;
+    }
+}
+
+@media (max-width: 550px) {
+    #rig li {
+        width:33.33%;
+    }
+}
+
+.modal-body {
+    position:relative;
+  padding-bottom:56.25%;
+  padding-top:30px;
+  height:0;
+  overflow:hidden;
+
+}
+.modal-body iframe, .video-container object, .video-container embed {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+}
+
+li:a:hover{
+
+  opacity: 0.7;
+}
+</style>
 
 <title>ray jones</title>
 <link rel="shortcut icon" href="icons/favicon.png" />
@@ -12,25 +135,25 @@
 
 
 <!-- HEADER-->
-<div style="width: 100%; overflow: hidden; position: fixed; background-color: white; top: 0;">
+<div style="z-index: 9; width: 100%; overflow: hidden; position: fixed; background-color: white; top: 0;">
 
 
- <a href="/"><div style="width: 600px; float: left;">   <div class="pictureContainer2" style=" float: left;"> </div>
+ <a href="/"><div style="z-index: 9; width: 600px; float: left;">   <div class="pictureContainer2" style=" float: left;"> </div>
 
 
-	<br>&nbsp<h9> &nbsp&nbsp ray jones</h9>
-		</a>
-		<br><br>
-		<table>
-		<tr>
-		<td width="100" id="heads"><a href="timelapses" id="headington"><h3 align="left">timelapses</h3></td></a>
-		<td width="100" id="motion"><a href="video" id="headington"><h3 align="center">&nbspvideo</h3></td></a>
-		<td width="100" id="heads"><a href="stills" id="headington"><h3 align="right">stills</h3></td></a>
-		</tr>
-		</table>
+  <br>&nbsp<h9> &nbsp&nbsp ray jones</h9>
+    </a>
+    <br><br>
+    <table>
+    <tr>
+    <td width="100" id="heads"><a href="timelapses" id="headington"><h3 align="left">timelapses</h3></td></a>
+    <td width="100" id="motion"><a href="video" id="headington"><h3 align="center">&nbspvideo</h3></td></a>
+    <td width="100" id="heads"><a href="stills" id="headington"><h3 align="right">stills</h3></td></a>
+    </tr>
+    </table>
 
  </div></a>
-    <div style="float: right;"> <pagetitle align="right"><descript><br></descript>timelapses&nbsp&nbsp&nbsp</pagetitle> </div>
+    <div style="z-index: 9; float: right;"> <pagetitle align="right"><descript><br></descript>timelapses&nbsp&nbsp&nbsp</pagetitle> </div>
 <script>
 $('#daBar').hide();
 
@@ -45,109 +168,378 @@ $(window).scroll(function() {
      }
  });
 </script>
-<div id= "daBar" style="width: 100%; height: 140px; overflow: hidden; position: fixed;  top-padding: 100;"></div>
+<div id= "daBar" style="z-index: 9; width: 100%; height: 140px; overflow: hidden; position: fixed;  top-padding: 100;"></div>
 
 </div>
 
 
-<br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br>
+
+
+<ul align="center" id="rig">
+
+    <li>
+            <img class="rig-img" src="thumbnails/hudsonthumb.png" id="myImg5">
+    </li>
+ 
+    <li>
+            <img class="rig-img" src="thumbnails/tenerifethumb.png" id="myImg6">
+    </li>
+
+        <li>
+            <img class="rig-img" src="thumbnails/bklynbridgethumb.png" id="myImg7">
+    </li>
+    <li>
+            <img class="rig-img" src="thumbnails/cabotthumb.png" id="myImg8">
+    </li>   
+      <li>
+            <img class="rig-img" src="thumbnails/mbridgethumb.png" id="myImg9">
+    </li>  
+    <li>
+            <img class="rig-img" src="thumbnails/promthumb.png" id="myImg10">
+    </li>
+    <li>
+            <img class="rig-img" src="thumbnails/queensborothumb.png" id="myImg11">
+    </li>
+    <li>
+            <img class="rig-img" src="thumbnails/redhookthumb.png" id="myImg12">
+    </li>
+</ul>
 
 
 
 
-<!-- VIDEO ONE-->
-
-		<div align="right">
-		<table>
-		<td align="right">
-		<captions><br><br><br><br><br><br>cabot beach&nbsp&nbsp&nbsp<br><br>
-			august 2016&nbsp&nbsp&nbsp<br><br><br><br><br>music by travis scott</captions>
-		</td>
-		<td>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/XsoYzcOAhc4?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>		</td>
-		</table>
-		<br><br><br><br><br> 
-		</div>
+<!-- VIDEO ONE HUDSON-->
+<!-- The Modal -->
+    <div id="myModal5" class="modal">
 
 
-<!--VIDEO TWO-->
+  <!-- Modal content -->
+  <div class="modal-content" >
+      <span5 class="close5">&times;</span5>
 
-		<div align="left">
-		<table>
-		<td>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/lc9fOn00cQM?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>		</td>
-		<td>
-		<captions align="left"><br><br><br><br><br><br>&nbsp&nbsp&nbspnorth harbour<br>&nbsp&nbsp&nbspfrom tenerife<br>
-			&nbsp&nbsp&nbspaugust 2016<br><br><br><br><br>music by russ</captions>
-		</td>
-		</table>
-		</div>
-		<br><br><br><br><br>
+    <div class="modal-header">
+      <h8>hudson river - september 2017</h8>
+</div>
+    <div class="modal-body">
+      <p><iframe type="text/html" width="960" height="540" src="https://www.youtube.com/embed/TEABWBBPgrU?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>    
 
-<!-- VIDEO THREE-->
-
-		<div align="right">
-		<table>
-		<td align="right">
-		<captions><br><br><br><br><br><br>brooklyn bridge&nbsp&nbsp&nbsp<br>from DUMBO&nbsp&nbsp&nbsp<br>
-			august 2016&nbsp&nbsp&nbsp<br><br><br><br><br>music by frank ocean</captions>
-		</td>
-		<td>
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/inN2-kLviRM?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-		</td>
-		</table>
-		<br><br><br><br><br> 
-		</div>
+</p>
+    </div>
+    <div class="modal-footer">
+      <h4>music by ben murray smith</h4>
+    </div>
+  </div>
+</div>
 
 
-<!--VIDEO FOUR-->
+    
 
-		<div align="left">
-		<table>
-		<td>
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/XbVw13hBxUQ?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-		</td>
-		<td>
-		<captions align="left"><br><br><br><br><br><br>&nbsp&nbsp&nbspmanhattan bridge<br>&nbsp&nbsp&nbspfrom DUMBO<br>
-			&nbsp&nbsp&nbspaugust 2016<br><br><br><br><br>music by jeff kaale</captions>
-		</td>
-		</table>
-		</div>
-		<br><br><br><br><br>
+<!-- VIDEO TWO TENERIFE-->
 
 
+<!-- The Modal -->
+<div id="myModal6" class="modal">
 
-<!--VIDEO FIVE-->
 
-		<div align="right">
-		<table>
-		<td align="right">
-		<captions><br><br><br><br><br><br>manhattan skyline&nbsp&nbsp&nbsp<br>from brooklyn promenade&nbsp&nbsp&nbsp<br>
-			june 2016&nbsp&nbsp&nbsp<br><br><br><br><br>music by jeff kaale</captions>
-		</td>
-		<td>
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/_tG7X_2J-hw?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-		</td>
-		</table>
-		</div>
-		<br><br><br><br><br> 
+  <!-- Modal content -->
+  <div class="modal-content" >
+      <span6 class="close6">&times;</span6>
+
+    <div class="modal-header">
+      <h8>north harbour from tenerife - august 2016</h8>
+    </div>
+    <div class="modal-body">
+<iframe width="960" height="540" src="https://www.youtube.com/embed/lc9fOn00cQM?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+
+    </div>
+    <div class="modal-footer">
+      <h4>music by russ</h4>
+    </div>
+  </div>
+</div>
+    
+<!-- VIDEO THREE BROOKLYN BRIDGE-->
+<div id="myModal7" class="modal">
+
+<!-- Modal content -->
+  <div class="modal-content" >
+      <span7 class="close7">&times;</span7>
+
+    <div class="modal-header">
+      <h8>brooklyn bridge from dumbo - august 2016</h8>
+    </div>
+    <div class="modal-body">
+<iframe type="text/html" width="960" height="540" src="https://www.youtube.com/embed/inN2-kLviRM?showinfo=0&controls=0&rel=0" frameborder="0"></iframe>
+
+    </div>
+    <div class="modal-footer">
+      <h4>music by frank ocean</h4>
+    </div>
+  </div>
+</div>
 
 
 
-<!--VIDEO SIX-->
 
-		<div align="left">
-		<table>
-		<td>
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/1VkBot79hXM?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-		</td>
-		<td>
-		<captions align="left"><br><br><br><br><br><br>&nbsp&nbsp&nbspeast river and west side highway<br>&nbsp&nbsp&nbspfrom queensboro bridge<br>
-			&nbsp&nbsp&nbspjuly 2016<br><br><br><br><br>music by jeff kaale</captions>
-		</td>
-		</table>
-		</div>
-		<br><br><br><br><br>
+<!-- VIDEO FOUR CABOT-->
+  <div id="myModal8" class="modal">
+
+
+  <!-- Modal content -->
+  <div class="modal-content" >
+      <span8 class="close8">&times;</span8>
+
+    <div class="modal-header">
+      <h8>cabot beach - august 2016</h8>
+    </div>
+    <div class="modal-body">
+      <iframe align="center" width="960" height="540" src="https://www.youtube.com/embed/XsoYzcOAhc4?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+
+    </div>
+    <div class="modal-footer">
+      <h4>music by travis scott</h4>
+    </div>
+  </div>
+</div>
+    
+
+
+<!-- VIDEO FIVE MANH BRIDGE-->
+  <div id="myModal9" class="modal">
+
+
+  <!-- Modal content -->
+  <div class="modal-content" >
+      <span9 class="close9">&times;</span9>
+
+    <div class="modal-header">
+      <h8>manhattan bridge from dumbo - august 2016</h8>
+    </div>
+    <div class="modal-body">
+      <p><iframe align="center" width="960" height="540" src="https://www.youtube.com/embed/XbVw13hBxUQ?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+</p>
+    </div>
+    <div class="modal-footer">
+      <h4>music by jeff kaale</h4>
+    </div>
+  </div>
+</div>
+    
+
+
+<!-- VIDEO SIX PROMENADE-->
+  <div id="myModal10" class="modal">
+
+
+  <!-- Modal content -->
+  <div class="modal-content" >
+      <span10 class="close10">&times;</span10>
+
+    <div class="modal-header">
+      <h8>manhattan skyline from brooklyn promenade - june 2016
+</h8>
+    </div>
+    <div class="modal-body">
+      <p><iframe align="center" width="960" height="540" src="https://www.youtube.com/embed/_tG7X_2J-hw?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+</p>
+    </div>
+    <div class="modal-footer">
+      <h4>music by jeff kaale</h4>
+    </div>
+  </div>
+</div>
+    
+
+
+
+<!-- VIDEO SEVEN QUEENSBORO-->
+  <div id="myModal11" class="modal">
+
+
+  <!-- Modal content -->
+  <div class="modal-content" >
+      <span11 class="close11">&times;</span11>
+
+    <div class="modal-header">
+      <h8>east river and west side highway from queensboro bridge - july 2016</h8>
+    </div>
+    <div class="modal-body">
+      <p><iframe align="center" width="960" height="540" src="https://www.youtube.com/embed/1VkBot79hXM?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+</p>
+    </div>
+    <div class="modal-footer">
+      <h4>music by jeff kaale</h4>
+    </div>
+  </div>
+</div>
+    
+
+
+
+<!-- VIDEO EIGHT RED HOOK-->
+  <div id="myModal12" class="modal">
+
+
+  <!-- Modal content -->
+  <div class="modal-content" >
+      <span12 class="close12">&times;</span12>
+
+    <div class="modal-header">
+      <h8>red hook - august 2017</h8>
+    </div>
+    <div class="modal-body">
+      <p><iframe align="center" width="960" height="540" src="https://www.youtube.com/embed/LN99Y0BKklo?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+</p>
+    </div>
+    <div class="modal-footer">
+      <h4>music by andrew applepie</h4>
+    </div>
+  </div>
+</div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+// Get the modal
+var modal5 = document.getElementById('myModal5');
+var modal6 = document.getElementById('myModal6');
+var modal7 = document.getElementById('myModal7');
+var modal8 = document.getElementById('myModal8');
+var modal9 = document.getElementById('myModal9');
+var modal10 = document.getElementById('myModal10');
+var modal11 = document.getElementById('myModal11');
+var modal12 = document.getElementById('myModal12');
+
+// Get the button that opens the modal
+var img5 = document.getElementById("myImg5");
+var img6 = document.getElementById("myImg6");
+var img7 = document.getElementById("myImg7");
+var img8 = document.getElementById("myImg8");
+var img9 = document.getElementById("myImg9");
+var img10 = document.getElementById("myImg10");
+var img11 = document.getElementById("myImg11");
+var img12 = document.getElementById("myImg12");
+
+
+
+
+// Get the <span> element that closes the modal
+var span5 = document.getElementsByClassName("close5")[0];
+var span6 = document.getElementsByClassName("close6")[0];
+var span7 = document.getElementsByClassName("close7")[0];
+var span8 = document.getElementsByClassName("close8")[0];
+var span9 = document.getElementsByClassName("close9")[0];
+var span10 = document.getElementsByClassName("close10")[0];
+var span11 = document.getElementsByClassName("close11")[0];
+var span12 = document.getElementsByClassName("close12")[0];
+
+// When the user clicks the button, open the modal 
+img5.onclick = function() {
+    modal5.style.display = "block";
+}
+img6.onclick = function() {
+    modal6.style.display = "block";
+}
+img7.onclick = function() {
+    modal7.style.display = "block";
+}
+img8.onclick = function() {
+    modal8.style.display = "block";
+}
+img9.onclick = function() {
+  modal9.style.display = "block";
+}
+img10.onclick = function() {
+    modal10.style.display = "block";
+}
+img11.onclick = function() {
+    modal11.style.display = "block";
+}
+img12.onclick = function() {
+    modal12.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span5.onclick = function() {
+    modal5.style.display = "none";
+
+}
+span6.onclick = function() {
+    modal6.style.display = "none";
+}
+span7.onclick = function() {
+    modal7.style.display = "none";
+}
+span8.onclick = function() {
+    modal8.style.display = "none";
+}
+span9.onclick = function() {
+    modal9.style.display = "none";
+}
+span10.onclick = function() {
+    modal10.style.display = "none";
+}
+span11.onclick = function() {
+    modal11.style.display = "none";
+}
+span12.onclick = function() {
+    modal12.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal5) {
+        modal5.style.display = "none";
+  
+    }    if (event.target == modal6) {
+        modal6.style.display = "none";
+  
+    }    if (event.target == modal7) {
+        modal7.style.display = "none";
+  
+    }    if (event.target == modal8) {
+        modal8.style.display = "none";
+  
+    }    if (event.target == modal9) {
+        modal9.style.display = "none";
+  
+    }    if (event.target == modal10) {
+        modal10.style.display = "none";
+  
+    }    if (event.target == modal11) {
+        modal11.style.display = "none";
+  
+    }    if (event.target == modal12) {
+        modal12.style.display = "none";
+  
+    }
+}
+
+
+</script>
 
 
 <!-- PROCESS-->
