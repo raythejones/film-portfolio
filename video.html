@@ -18,7 +18,7 @@
     color: #fff;
     text-align: center;
     border-radius: 6px;
-    padding: 10px 0;
+    padding: 10px 10px 10px 10px;
 
     /* Position the tooltip */
     position: absolute;
@@ -50,7 +50,7 @@
 
 
 <!-- HEADER-->
-<div style="width: 100%; overflow: hidden; position: fixed; background-color: white; top: 0;">
+<div style="z-index: 9; width: 100%; overflow: hidden; position: fixed; background-color: white; top: 0;">
 
  <a href="/"><div style="width: 600px; float: left;">   <div class="pictureContainer2" style=" float: left;"> </div>
 
@@ -67,7 +67,7 @@
 		</table>
 
  </div></a>
-    <div style="float: right;"> <pagetitle align="right"><descript><br></descript>video&nbsp&nbsp&nbsp</pagetitle> </div>
+    <div style=" z-index: 9; float: right;"> <pagetitle align="right"><descript><br></descript>video&nbsp&nbsp&nbsp</pagetitle> </div>
 <script>
 $('#daBar').hide();
 
@@ -82,7 +82,7 @@ $(window).scroll(function() {
      }
  });
 </script>
-<div id= "daBar" style="width: 100%; height: 140px; overflow: hidden; position: fixed;  top-padding: 100;"></div>
+<div id= "daBar" style="z-index: 9; width: 100%; height: 140px; overflow: hidden; position: fixed;  top-padding: 100;"></div>
 
 </div>
 
@@ -119,9 +119,11 @@ $(window).scroll(function() {
 		<table>
 		<td align="right">
 		<captions><indexdescript><br><br><br><br><br><br><br><br>Raymond Shapiro</indexdescript>&nbsp&nbsp<br>
-			summer 2016&nbsp&nbsp<br><br><br><br><br><br>
+			summer 2016&nbsp&nbsp<br>made at the DOROT community center&nbsp&nbsp<br><br><br><br><br>
+<div class="tooltip">Artist's Statement  <span class="tooltiptext">This movie was made with Steven Orlofsky with help from Dianne Hudson. We made this movie as part of a project at the DOROT Community Center for an oral history project about Jews during WWII. Some of the formatting and imagery corresponds to their standards.</span>
+<br>
 
-<br></captions>
+</captions>
 		</td>
 		<td>
 		<img width="640" src="thumbnails/raymondthumb.png" id="myImg">
@@ -149,7 +151,7 @@ $(window).scroll(function() {
 </p>
     </div>
     <div class="modal-footer">
-      <h3>This movie was made as part of a program at the New York Film Academy.</h3>
+      <h4>I wrote and directed this movie as part of a One-Week Film program at the New York Film Academy in the summer of 2015.</h4>
     </div>
   </div>
 </div>
@@ -160,7 +162,7 @@ $(window).scroll(function() {
 	</td>
 		<td>
 		<captions align="left"><br><br><br><br><br><br><br><indexdescript>&nbsp&nbspthe trashcan</indexdescript><br>
-			&nbsp&nbspsummer 2015<br><br><br><br><br><br><br><captions align="left">made at the new york film academy</captions>
+			&nbsp&nbspsummer 2015<br>&nbsp&nbspmade at the new york film academy<br><br><br><br><br><br><captions align="left"><div class="tooltip">Artist's Statement  <span class="tooltiptext">I wrote and directed this movie as part of a One-Week Film program at the New York Film Academy in the summer of 2015.</span></captions>
 		</td>
 		</table>
 		</div>
@@ -178,7 +180,7 @@ $(window).scroll(function() {
       <h8>Killer</h8>
     </div>
     <div class="modal-body">
-      <p><iframe align="center" width="960" height="540" src="https://www.youtube.com/embed/x7tI2RQcECo?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+      <p><iframe width="560" height="315" src="https://www.youtube.com/embed/x7tI2RQcECo?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 </p>
     </div>
     <div class="modal-footer">
@@ -225,7 +227,7 @@ $(window).scroll(function() {
 </p>
     </div>
     <div class="modal-footer">
-      <h3>The first snow of winter 2015 in Brooklyn, NY.</h3>
+      <h4>This collection of timelapses depicts the first snowfall of the winter of 2015 in Brooklyn, NY.</h4>
     </div>
   </div>
 </div>
@@ -236,7 +238,7 @@ $(window).scroll(function() {
 		</td>
 		<td>
 		<captions align="left"><br><br><br><br><br><br><br><indexdescript>&nbsp&nbspsnow in brooklyn</indexdescript><br>
-			&nbsp&nbspwinter 2015<br><br><br><br><br><br><br><captions align="left"></captions>
+			&nbsp&nbspwinter 2015<br><br><br><br><br><br><br><captions align="left"><div class="tooltip">Artist's Statement  <span class="tooltiptext">This collection of timelapses depicts the first snowfall of the winter of 2015 in Brooklyn, NY.</span></captions>
 		</td>
 		</table>
 		</div>
