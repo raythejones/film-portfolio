@@ -202,6 +202,88 @@ img {
 #myImg4:hover {opacity: 0.7;}
 
 
+#myImg5 {
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg5:hover {opacity: 0.7;}
+
+
+
+#myImg6 {
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg6:hover {opacity: 0.7;}
+
+
+
+#myImg7 {
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg7:hover {opacity: 0.7;}
+
+
+
+#myImg8{
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg8:hover {opacity: 0.7;}
+
+
+
+#myImg9 {
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg9:hover {opacity: 0.7;}
+
+
+
+#myImg10 {
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg10:hover {opacity: 0.7;}
+
+
+
+#myImg11 {
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg11:hover {opacity: 0.7;}
+
+
+
+#myImg12 {
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg12:hover {opacity: 0.7;}
+
+
+
+
+
 
 
 /* The Modal (background) */
@@ -273,7 +355,47 @@ img {
     font-size: 28px;
     font-weight: bold;
 }
-
+.close5 {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}.close6 {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}.close7 {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}.close8 {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}.close9 {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}.close10 {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}.close11 {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}.close12 {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
 .close:hover,
 .close:focus {
     color: #fff;
@@ -298,6 +420,60 @@ img {
     text-decoration: none;
     cursor: pointer;
 }
+.close5:hover,
+.close5:focus {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+.close6:hover,
+.close6:focus {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+.close7:hover,
+.close7:focus {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+.close8:hover,
+.close8:focus {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+.close9:hover,
+.close9:focus {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+.close10:hover,
+.close10:focus {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+.close11:hover,
+.close11:focus {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+.close12:hover,
+.close12:focus {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
 .modal-header {
 
     padding-top: 5px;
