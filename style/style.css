@@ -281,6 +281,23 @@ img {
 #myImg12:hover {opacity: 0.7;}
 
 
+#myImg13 {
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg13:hover {opacity: 0.7;}
+
+#myImg14 {
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg14:hover {opacity: 0.7;}
+
+
 
 
 
@@ -396,6 +413,18 @@ img {
     font-size: 28px;
     font-weight: bold;
 }
+.close13 {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close14 {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
 .close:hover,
 .close:focus {
     color: #fff;
@@ -468,7 +497,18 @@ img {
     text-decoration: none;
     cursor: pointer;
 }
-
+.close13:hover,
+.close13:focus {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+.close14:hover,
+.close14:focus {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
 
 
 
