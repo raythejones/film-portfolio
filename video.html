@@ -49,6 +49,16 @@ gi
 </head>
 <body>
 
+<script>
+function toggleVideo(state) {
+    // if state == 'hide', hide. Else: show video
+    var div = document.getElementById("popupVid");
+    var iframe = div.getElementsByTagName("iframe")[0].contentWindow;
+    div.style.display = state == 'hide' ? 'none' : '';
+    func = state == 'hide' ? 'pauseVideo' : 'playVideo';
+    iframe.postMessage('{"event":"command","func":"' + func + '","args":""}', '*');
+}
+</script>
 
 <!-- HEADER-->
 <div style="z-index: 9; width: 100%; overflow: hidden; position: fixed; background-color: white; top: 0;">
@@ -94,12 +104,12 @@ $(window).scroll(function() {
 
 <!-- VIDEO SKATE-->
 <!-- The Modal -->
-<div id="myModal13" class="modal">
+<div id="myModal13" class="modal"  onClick="toggleVideo();">
 
 
   <!-- Modal content -->
   <div class="modal-content" >
-      <span13 class="close13">&times;</span13>
+      <span13 class="close13" onClick="toggleVideo('hide');">&times;&nbsp</span13>
 
     <div class="modal-header">
       <h8>skate (Ben Crane)</h8>
@@ -139,7 +149,7 @@ $(window).scroll(function() {
 
   <!-- Modal content -->
   <div class="modal-content" >
-      <span14 class="close14">&times;</span14>
+      <span14 class="close14">&times;&nbsp</span14>
 
     <div class="modal-header">
       <h8>Dr. Mansur Khan Opportunity Scholarship</h8>
@@ -173,7 +183,7 @@ $(window).scroll(function() {
 
   <!-- Modal content -->
   <div class="modal-content" >
-      <span class="close">&times;</span>
+      <span class="close">&times;&nbsp</span>
 
     <div class="modal-header">
       <h8>Raymond Shapiro</h8>
@@ -215,7 +225,7 @@ $(window).scroll(function() {
 
   <!-- Modal content -->
   <div class="modal-content" >
-      <span2 class="close2">&times;</span2>
+      <span2 class="close2">&times;&nbsp</span2>
 
     <div class="modal-header">
       <h8>The Trashcan</h8>
@@ -248,7 +258,7 @@ $(window).scroll(function() {
 
   <!-- Modal content -->
   <div class="modal-content" >
-      <span2 class="close3">&times;</span2>
+      <span2 class="close3">&times;&nbsp</span2>
 
     <div class="modal-header">
       <h8>Killer</h8>
@@ -291,7 +301,7 @@ $(window).scroll(function() {
 
   <!-- Modal content -->
   <div class="modal-content" >
-      <span2 class="close4">&times;</span2>
+      <span2 class="close4">&times;&nbsp</span2>
 
     <div class="modal-header">
       <h8>snow in brooklyn</h8>
