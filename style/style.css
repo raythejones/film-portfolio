@@ -322,7 +322,7 @@ img {
 /* Modal Content */
 .modal-content {
     position: relative;
-    background-color: #04FF82;
+    background-color: #FFFFFF;
     padding: 0;
     border: 1px solid #888;
     width: 60%;
@@ -519,7 +519,7 @@ img {
     padding-top: 5px;
     padding-bottom: 5px;
     padding: 2px 16px;
-    background-color: #04FF82;
+    background-color: #ffffff;
     color: black;
 }
 
@@ -553,7 +553,7 @@ font-family: courier new;
 .modal-footer {
 
     padding: 2px 16px;
-    background-color: #04FF82;
+    background-color: #FFFFFF;
     text-align: center;
  }
 
