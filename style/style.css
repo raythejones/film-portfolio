@@ -199,176 +199,6 @@ img {
 }
 
 
-
-
-#myImg {
-    border-radius: 2px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-#myImg:hover {opacity: 0.7;}
-
-
-#myImg2 {
-    border-radius: 2px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-#myImg2:hover {opacity: 0.7;}
-
-#myImg3 {
-    border-radius: 2px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-#myImg3:hover {opacity: 0.7;}
-
-#myImg4 {
-    border-radius: 2px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-#myImg4:hover {opacity: 0.7;}
-
-
-#myImg5 {
-    border-radius: 2px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-#myImg5:hover {opacity: 0.7;}
-
-
-
-#myImg6 {
-    border-radius: 2px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-#myImg6:hover {opacity: 0.7;}
-
-
-
-#myImg7 {
-    border-radius: 2px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-#myImg7:hover {opacity: 0.7;}
-
-
-
-#myImg8{
-    border-radius: 2px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-#myImg8:hover {opacity: 0.7;}
-
-
-
-#myImg9 {
-    border-radius: 2px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-#myImg9:hover {opacity: 0.7;}
-
-
-
-#myImg10 {
-    border-radius: 2px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-#myImg10:hover {opacity: 0.7;}
-
-
-
-#myImg11 {
-    border-radius: 2px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-#myImg11:hover {opacity: 0.7;}
-
-
-
-#myImg12 {
-    border-radius: 2px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-#myImg12:hover {opacity: 0.7;}
-
-
-#myImg13 {
-    border-radius: 2px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-#myImg13:hover {opacity: 0.7;}
-
-#myImg14 {
-    border-radius: 2px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-#myImg14:hover {opacity: 0.7;}
-
-
-
-
-
-
-
-/* The Modal (background) */
-.modal {
-
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 10; /* Sit on top */
-    padding-top: 3%; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/* Modal Content */
-.modal-content {
-    position: relative;
-    background-color: #FFFFFF;
-    padding: 0;
-    border: 1px solid #888;
-    width: 60%;
-    margin-left: 20%;
-    margin-top: -2%;
-
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-    -webkit-animation-name: animatetop;
-    -webkit-animation-duration: 0.4s;
-    animation-name: animatetop;
-    animation-duration: 1s
-}
-
 /* Add Animation */
 @-webkit-keyframes animatetop {
     from {top:-300px; opacity:0} 
@@ -380,182 +210,6 @@ img {
     to {top:0; opacity:1}
 }
 
-/* The Close Button */
-.close {
-    color: black;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-.close2 {
-    color: black;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-.close3 {
-    color: black;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-.close4 {
-    color: black;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-.close5 {
-    color: black;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}.close6 {
-    color: black;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}.close7 {
-    color: black;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}.close8 {
-    color: black;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}.close9 {
-    color: black;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}.close10 {
-    color: black;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}.close11 {
-    color: black;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}.close12 {
-    color: black;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-.close13 {
-    color: black;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-.close14 {
-    color: black;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-.close:hover,
-.close:focus {
-    color: #D8D8D8;
-    text-decoration: none;
-    cursor: pointer;
-}
-.close2:hover,
-.close2:focus {
-    color: #D8D8D8;
-    text-decoration: none;
-    cursor: pointer;
-}
-.close3:hover,
-.close3:focus {
-    color: #D8D8D8;
-    text-decoration: none;
-    cursor: pointer;
-}
-.close4:hover,
-.close4:focus {
-    color: #D8D8D8;
-    text-decoration: none;
-    cursor: pointer;
-}
-.close5:hover,
-.close5:focus {
-    color: #D8D8D8;
-    text-decoration: none;
-    cursor: pointer;
-}
-.close6:hover,
-.close6:focus {
-    color: #D8D8D8;
-    text-decoration: none;
-    cursor: pointer;
-}
-.close7:hover,
-.close7:focus {
-    color: #D8D8D8;
-    text-decoration: none;
-    cursor: pointer;
-}
-.close8:hover,
-.close8:focus {
-    color: #D8D8D8;
-    text-decoration: none;
-    cursor: pointer;
-}
-.close9:hover,
-.close9:focus {
-    color: #D8D8D8;
-    text-decoration: none;
-    cursor: pointer;
-}
-.close10:hover,
-.close10:focus {
-    color: #D8D8D8;
-    text-decoration: none;
-    cursor: pointer;
-}
-.close11:hover,
-.close11:focus {
-    color: #D8D8D8;
-    text-decoration: none;
-    cursor: pointer;
-}
-.close12:hover,
-.close12:focus {
-    color: #D8D8D8;
-    text-decoration: none;
-    cursor: pointer;
-}
-.close13:hover,
-.close13:focus {
-    color: #D8D8D8;
-    text-decoration: none;
-    cursor: pointer;
-}
-.close14:hover,
-.close14:focus {
-    color: #D8D8D8;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-
-
-
-
-.modal-header {
-
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding: 2px 16px;
-    background-color: #ffffff;
-    color: black;
-}
-
 h8 {
 font-family: courier new;
   font-weight: lighter;
@@ -563,37 +217,93 @@ font-family: courier new;
     text-align: center;
 }
 
-.modal-body {
-
-    padding: 2px 16px;
-
-   position:relative;
-    padding-bottom:46.25%;
-    padding-top:5%;
-    height:0;
-    overflow:hidden;
- 
-}
-.modal-body iframe, .modal-body object, .modal-body embed {
-    position:absolute;
- 
- left: 10%;
- top: 10%;
-    width:80%;
-    height:80%;
-}
-
-.modal-footer {
-
-    padding: 2px 16px;
-    background-color: #FFFFFF;
-    text-align: center;
- }
-
     
     .content-wrapper >div{
 display:none;
 }
-    
-    
+
+.popup-trigger {
+    align-content: center;
+  display: block;
+  margin: 0 auto;
+  background: #4EBD79;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 24px;
+  cursor: pointer;
+} 
+.popup-trigger:hover {
+    opacity: 0.8;
+    transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+
+} 
+.popup {
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  display: none;
+  z-index: 5000;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.popup>div {
+  border-radius: 10px;
+  position: fixed;
+  background: #000000;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+  padding: 30px 15px;
+  /* Width of popup can be changed */
+  width: 70%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  z-index: 5001;
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  text-align: left;
+  border: 5px solid #ffffff;
+}
+
+.popup-btn-close {
+  position: absolute;
+  background-color: #ffffff;
+  color: black;
+  top: -15px;
+  right: -15px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Arial Black', Arial, sans-serif;
+  cursor: pointer;
+  -webkit-box-shadow: -4px -2px 6px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: -4px -2px 6px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: -3px 1px 6px 0px rgba(0, 0, 0, 0.1);
+}
+
+.popup-btn-close:hover {
+  background-color: gray;
+  color: #000;
+}
+
+.popup-text {
+  background: #000;
+  color: #333;
+  z-index: 9999;
+  text-align: center;
+  vertical-align: center;
+}
      
