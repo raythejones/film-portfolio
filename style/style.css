@@ -1,10 +1,17 @@
 #myVideo {
     position: fixed;
+    top: 0
+    left: 0;
     right: 0;
     bottom: 0;
     min-width: 100%; 
     min-height: 100%;
     z-index: -100000000;
+}
+
+heyheyhey {
+    font-size: 1vw;
+
 }
 
 #daBar {
@@ -16,8 +23,8 @@ display: none;
 
 .darker {
     position: fixed;
-    left: 0px;
-    top: 0px;
+    left: 0;
+    top: 0;
     width: 100%;
     height: 1000%;
     z-index: -10000000;
@@ -65,10 +72,9 @@ display: none;
 
 .pictureContainer2 {
   background: url(../headshot3.png);
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-
+  width: 23.33333333%;
+  height: 23.33333333%;
+  border-style: solid;
   display: inline-block;
       -o-transition:1s;
   -ms-transition:1s;
@@ -89,15 +95,17 @@ bottom: 0px;
     background: -moz-linear-gradient(red, yellow); /* For Firefox 3.6 to 15 */
     background: linear-gradient(red, yellow); /* Standard syntax */
 }
+
 h9 {font-family: courier new;
 	font-weight: lighter;
-	font-size: 36px;
+    font-size: 3vw;
+/*	font-size: 36px; */
 	text-align: center;
 	}
 
 descript {font-family: courier new;
 	font-weight: lighter;
-	font-size: 14px;
+	font-size: 0.836111111vw;
 	}
 
 h1 {font-family: courier new;
@@ -117,7 +125,8 @@ h2 {font-family: courier new;
 h3 {font-family: courier new;
     font-weight: lighter;
 	font-color: black;
-	font-size: 19px;
+    font-size: 1.5vw;
+/*	font-size: 19px; */
 	}
 
 
@@ -160,6 +169,7 @@ a:active {
 
 #motion {
 	padding-left: 20px;
+
 }
 
 
@@ -191,12 +201,13 @@ font-family: courier new;
 
 pagetitle {font-family: courier new;
 	font-weight: lighter;
-	font-size: 60px;
+	font-size: 6vw;
 	}
 
 img {
     image-orientation: from-image;
 }
+
 
 
 /* Add Animation */
@@ -251,19 +262,22 @@ display:none;
   width: 100%;
   left: 0;
   top: 0;
+  text-align: center;
+
 }
 
 .popup>div {
   border-radius: 10px;
-  position: fixed;
-  background: #000000;
+  position: relative;
+  background: black;
   box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
-  padding: 30px 15px;
   /* Width of popup can be changed */
-  width: 70%;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   z-index: 5001;
+  text-align: center;
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
@@ -272,7 +286,11 @@ display:none;
   top: 50%;
   text-align: left;
   border: 5px solid #ffffff;
-}
+  width: 70%;
+
+  padding-bottom: 50%;
+    }
+
 
 .popup-btn-close {
   position: absolute;
@@ -292,6 +310,7 @@ display:none;
   -webkit-box-shadow: -4px -2px 6px 0px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: -4px -2px 6px 0px rgba(0, 0, 0, 0.1);
   box-shadow: -3px 1px 6px 0px rgba(0, 0, 0, 0.1);
+  z-index: 10000;
 }
 
 .popup-btn-close:hover {
@@ -300,10 +319,27 @@ display:none;
 }
 
 .popup-text {
-  background: #000;
+    width: 100%;
+    height: 90%;
+    padding-top: 5%;
+    position: absolute;
+  background: black;
   color: #333;
   z-index: 9999;
   text-align: center;
-  vertical-align: center;
+ }
+
+td:hover {
+    color: blue;
+
 }
-     
+
+.stretchy-wrapper {
+  width: 50%;
+  padding-top: 50%;
+position: relative; 
+}
+
+div.stretchy-wrapper > div {
+
+}
