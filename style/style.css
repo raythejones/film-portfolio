@@ -113,11 +113,11 @@ h1 {font-family: courier new;
 	text-align: center;
 	}
 
-h2 {font-family: courier new;
+h2 {
+    font-family: courier new;
 	font-weight: lighter;
-	font-size: 29px;
-		text-align: center;
-
+    text-align: right; 
+    color:white;
 	}
 
 
@@ -282,7 +282,14 @@ text-align: center;
   padding-bottom: 50%;
     }
 
+@media only screen and (max-height: 1200px) {
+    .popup>div {
+        height: 70%;
+        padding-left: 50%;    
 
+    }
+    
+}
 .popup-btn-close {
   position: absolute;
   background-color: #ffffff;
@@ -310,6 +317,7 @@ text-align: center;
 }
 
 .popup-text {
+    border-radius: 10px;
     width: 100%;
     height: 90%;
     padding-top: 5%;
@@ -346,7 +354,15 @@ position: relative;
         width:24%;
     }
 
-}
+    h2{
+            font-size: 3.5vw; 
+
+    }
+    h5{
+            text-align: right; 
+    font-size: 2vw;
+
+    }}
 
 @media only screen and (max-width: 1500px) {
 
@@ -354,6 +370,15 @@ position: relative;
         width: 32%;
     }
 
+    h2{
+        font-size: 3.5vw; 
+
+    }
+    h5{
+            text-align: right; 
+    font-size: 2vw;
+
+    }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -361,8 +386,26 @@ position: relative;
     .thepop {
         width: 49%;
     }
+    h2{
+        font-size: 3.5vw; 
 
+    }
+    h5{
+            text-align: right; 
+    font-size: 2vw;
 
+    }
+
+}
+.OnePhoto{
+width: 30%; 
+float: left;
+}
+
+.TwoAboutMe{
+width: 65%; 
+padding-left: 5%; 
+float: left;
 }
 
 @media only screen and (max-width: 600px) {
@@ -371,6 +414,40 @@ position: relative;
         width: 100%;
     }
 
+    .OnePhoto{
+        float:none;
+        width:70%;
+        text-align: center;
+    }
+
+    .TwoAboutMe{
+        float: none;
+        width: 100%;
+        text-align: center;
+        padding-left: 0%;
+    }
+
+    .containabout{
+    }
+    
+    h2 {
+        font-size: 7vw;
+        text-align: center;
+    }
+
+    h5{
+        text-align: center;
+            font-size: 3.5vw;
+
+
+    }
+
+}
+
+h5 {
+    font-family: courier new; 
+    font-weight: lighter; 
+    color:white; 
 }
 
 .thecontain {
@@ -383,4 +460,5 @@ width: 90%;
 text-align: center; 
 width: 100%;
 }
+
 
