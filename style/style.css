@@ -1,9 +1,8 @@
 #myVideo {
     position: fixed;
-    top: 0
-    left: 0;
-    right: 0;
-    bottom: 0;
+top: -10;
+left: -10;
+
     min-width: 100%; 
     min-height: 100%;
     z-index: -100000000;
@@ -34,7 +33,7 @@ display: none;
 }
 
 .darker2 {
-    position: absolute;
+    position: fixed;
     left: 0px;
     top: 0px;
     width: 100%;
@@ -235,15 +234,7 @@ display:none;
 
 .popup-trigger {
     align-content: center;
-  display: block;
-  margin: 0 auto;
-  background: #4EBD79;
-  color: #fff;
-  font-size: 18px;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
-  line-height: 24px;
+text-align: center;
   cursor: pointer;
 } 
 .popup-trigger:hover {
@@ -340,6 +331,56 @@ td:hover {
 position: relative; 
 }
 
-div.stretchy-wrapper > div {
+
+
+.thepop{
+    width:25%; 
+    display:inline-block;    
+ text-align: center;
+}
+
+
+@media only screen and (max-width: 10000px) {
+    
+    .thepop{
+        width:24%;
+    }
 
 }
+
+@media only screen and (max-width: 1500px) {
+
+    .thepop {
+        width: 32%;
+    }
+
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .thepop {
+        width: 49%;
+    }
+
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    .thepop {
+        width: 100%;
+    }
+
+}
+
+.thecontain {
+        display:inline-block;    
+text-align: center; 
+width: 90%;
+}
+.thesupercontain {
+        display:inline-block;    
+text-align: center; 
+width: 100%;
+}
+

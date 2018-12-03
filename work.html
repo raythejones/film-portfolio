@@ -140,19 +140,22 @@ $(window).scroll(function() {
 
 <!--START-->
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<div class="container" style="width: 88%; padding-left:6%;">
-  <a class="popup-trigger" data-target="#popup1"><img src="thumbnails/raymondthumb.png" style="width:25%; float: left;"></a>
-  <a class="popup-trigger" data-target="#popup2"><img src="thumbnails/vlogthumb.png" style="width:25%; float: left;"></a>
-  <a class="popup-trigger" data-target="#popup3"><img src="thumbnails/vballthumb.jpg" style="width:25%; float: left;"></a>
-  <a class="popup-trigger" data-target="#popup4"><img src="thumbnails/pulchthumb.png" style="width:25%; float: left;"></a>
-  <a class="popup-trigger" data-target="#popup5"><img src="thumbnails/thermthumb.png" style="width:25%; float: left;"></a>
-  <a class="popup-trigger" data-target="#popup6"><img src="thumbnails/trashcanthumb.png" style="width:25%; float: left;"></a>
-  <a class="popup-trigger" data-target="#popup7"><img src="thumbnails/khanthumb.jpg" style="width:25%; float: left;"></a>
-  <a class="popup-trigger" data-target="#popup8"><img src="thumbnails/skatethumb.png" style="width:25%; float: left;"></a>
-  <a class="popup-trigger" data-target="#popup9"><img src="thumbnails/snowthumb.png" style="width:25%; float: left;"></a>
-  <a class="popup-trigger" data-target="#popup10"><img src="thumbnails/killerthumb.png" style="width:25%; float: left;"></a>
+  <div class="thesupercontain">
+  <div class="thecontain">
 
-</div>
+  <div class="thepop"><a class="popup-trigger" data-target="#popup1"><img src="thumbnails/raymondthumb.png" style="width: 100%;"></a></div>
+  <div class="thepop"><a class="popup-trigger" data-target="#popup2"><img src="thumbnails/vlogthumb.png" style="width: 100%;"></a></div>
+  <div class="thepop"><a class="popup-trigger" data-target="#popup3"><img src="thumbnails/vballthumb.jpg" style="width:100%;"></a></div>
+  <div class="thepop"><a class="popup-trigger" data-target="#popup4"><img src="thumbnails/pulchthumb.png" style="width: 100%;"></a></div>
+  <div class="thepop"><a class="popup-trigger" data-target="#popup5"><img src="thumbnails/thermthumb.png" style="width: 100%;"></a></div>
+  <div class="thepop"><a class="popup-trigger" data-target="#popup6"><img src="thumbnails/trashcanthumb.png" style="width: 100%;"></a></div>
+  <div class="thepop"><a class="popup-trigger" data-target="#popup7"><img src="thumbnails/khanthumb.jpg" style="width: 100%;"></a></div>
+  <div class="thepop"><a class="popup-trigger" data-target="#popup8"><img src="thumbnails/skatethumb.png" style="width: 100%;"></a></div>
+  <div class="thepop"><a class="popup-trigger" data-target="#popup9"><img src="thumbnails/snowthumb.png" style="width: 100%;"></a></div>
+  <div class="thepop"><a class="popup-trigger" data-target="#popup10"><img src="thumbnails/killerthumb.png" style="width: 100%;"></a></div>
+
+</div></div>
+
 <div id="popup1" class="popup">
   <div class="popup-text"><iframe align="center" style="width: 90%; height:78%;" src="https://www.youtube.com/embed/424rgSQaAyo?rel=0&amp;&amp;showinfo=0" frameborder="0" allowfullscreen></iframe><h3 align="center" style="color: white; width: 80%; padding-left: 10%;"><br><br>- Raymond Shapiro - <br>Made with help from Old School Films as part of a project at the DOROT community center in the summer of 2016.</h3></div>
   <span class="popup-btn-close">&times;</span>
@@ -223,7 +226,7 @@ function popupOpenClose(popup) {
     if (e.target == this) {
       if ($(popup).is(':visible')) {
         $(popup).fadeOut();
-        $(popup).stopVideo();
+        player.stopVideo();
       }
     }
   });
@@ -234,8 +237,8 @@ function popupOpenClose(popup) {
       $(".formElementError").remove();
     }
     $(popup).fadeOut();
-    $(popup).stopVideo();
-  });
+    $(player).stopVideo();
+    });
 }
 
 $(document).ready(function() {
