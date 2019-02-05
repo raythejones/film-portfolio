@@ -1,0 +1,256 @@
+<html>
+<head><link rel="stylesheet" type="text/css" href="style/style.css">
+
+
+<title>ray jones</title>
+<link rel="shortcut icon" href="fav/favicon.ico" />
+
+<link rel="apple-touch-icon" sizes="57x57" href="fav/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="fav/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="fav/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="fav/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="fav/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="fav/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="fav/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="fav/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="fav/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="fav/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="fav/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="fav/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
+<link rel="manifest" href="fav/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="fav/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<style>
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 400px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px 10px 10px 10px;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+        bottom: 100%;
+    left: 50%; 
+    margin-left: -200px; /* Use half of the width (120/2 = 60), to center the tooltip */
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+gi
+.tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+    .resource {
+      position: absolute;
+      margin-left: 400px;
+      margin-top: -10px;
+      width: 300px;
+      height: 300px;
+      padding-bottom: 120px;
+        background-color:#FFFFCC;
+    }
+</style>
+
+
+</head>
+
+
+<body>
+      <heyheyhey>
+
+<video autoplay muted loop id="myVideo">
+  <source src="hudson.mp4" type="video/mp4">
+</video>
+<script>
+function toggleVideo(state) {
+    // if state == 'hide', hide. Else: show video
+    var div = document.getElementById("popupVid");
+    var iframe = div.getElementsByTagName("iframe")[0].contentWindow;
+    div.style.display = state == 'hide' ? 'none' : '';
+    func = state == 'hide' ? 'pauseVideo' : 'playVideo';
+    iframe.postMessage('{"event":"command","func":"' + func + '","args":""}', '*');
+}
+</script>
+
+<!-- HEADER-->
+
+  <div class=darker2></div>
+
+
+ <div style="width: 37.5%; float: left;"><a href="/">  <div style="margin-right: 76.6667%; width: 23.3333%; height: width/23.3333 * 15.3333%;"> <img src="headshot3.png" style="width: 100%"> </img></div>
+
+<div style="text-align: center; float: left; width: 25.7500125%; position: absolute; left:8.749875%;top:0;" >
+  <heyheyhey> <br></heyheyhey><h9 align="center" style="color:white; text-align: center; width: 100%;">ray jones</h9>
+    </a>
+    <br><br>
+    <table style=" width: 100%;">
+    <tr style="width:100%;">
+    <td style="text-align: left; width: 50%;"><a href="about"><h3 style="color:white;">&nbsp&nbsp&nbspabout me</h3></a></td>
+    <td style="text-align: right; width: 50%;"><a href="work"><h3 style=" color:white;">my work&nbsp&nbsp&nbsp</h3></a></td>
+    </tr>
+    </table>
+</div>
+ </div></a>
+ 
+    <div style="float: right;"> <pagetitle align="right" style="color:white;"><descript><br></descript>my work&nbsp&nbsp&nbsp</pagetitle> </div>
+<script>
+$('#daBar').hide();
+
+$(window).scroll(function() {
+    if ($(this).scrollTop()>0)
+     {
+        $('#daBar').fadeIn();
+     }
+    else
+     {
+      $('#daBar').fadeOut();
+     }
+ });
+</script>
+<div id= "daBar" style="width: 100%; height: 10%; overflow: hidden; position: fixed; background-color: green"></div>
+
+</div></div>
+
+
+<!-- end of HEADER -->
+
+
+
+<br><br><br><br><br><br><br><br><br><br>
+
+<!--START-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <div class="thesupercontain">
+  <div class="thecontain">
+
+  <div class="thepop"><a class="popup-trigger" data-target="#popup1"><img src="thumbnails/raymondthumb.png" style="width: 100%;"></a></div>
+  <div class="thepop"><a class="popup-trigger" data-target="#popup2"><img src="thumbnails/vlogthumb.png" style="width: 100%;"></a></div>
+  <div class="thepop"><a class="popup-trigger" data-target="#popup3"><img src="thumbnails/vballthumb.jpg" style="width:100%;"></a></div>
+  <div class="thepop"><a class="popup-trigger" data-target="#popup4"><img src="thumbnails/pulchthumb.png" style="width: 100%;"></a></div>
+  <div class="thepop"><a class="popup-trigger" data-target="#popup5"><img src="thumbnails/thermthumb.png" style="width: 100%;"></a></div>
+  <div class="thepop"><a class="popup-trigger" data-target="#popup6"><img src="thumbnails/trashcanthumb.png" style="width: 100%;"></a></div>
+  <div class="thepop"><a class="popup-trigger" data-target="#popup7"><img src="thumbnails/khanthumb.jpg" style="width: 100%;"></a></div>
+  <div class="thepop"><a class="popup-trigger" data-target="#popup8"><img src="thumbnails/skatethumb.png" style="width: 100%;"></a></div>
+  <div class="thepop"><a class="popup-trigger" data-target="#popup9"><img src="thumbnails/snowthumb.png" style="width: 100%;"></a></div>
+  <div class="thepop"><a class="popup-trigger" data-target="#popup10"><img src="thumbnails/killerthumb.png" style="width: 100%;"></a></div>
+
+</div></div>
+
+<div id="popup1" class="popup">
+  <div class="popup-text"><iframe align="center" style="width: 90%; height:78%;" src="https://www.youtube.com/embed/424rgSQaAyo?rel=0&amp;&amp;showinfo=0" frameborder="0" allowfullscreen></iframe><h3 align="center" style="color: white; width: 80%; padding-left: 10%;"><br><br>- Raymond Shapiro - <br>Made with help from Old School Films as part of a project at the DOROT community center in the summer of 2016.</h3></div>
+  <span class="popup-btn-close">&times;</span>
+</div>
+<div id="popup2" class="popup">
+<div class="popup-text" ><iframe style="width: 90%; height:78%;" src="https://www.youtube.com/embed/5Lvg_voNTxY?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe><h3 align="center" style="color: white; width: 80%; padding-left: 10%;"><br><br>- Daily Vlogs from Europe 2018 -<br> I daily vlogged my trip to Europe in the summer of 2018. Watch the rest of my vlogs <a style="color: orange;" href="https://www.youtube.com/watch?v=h65i7I1FPbI&list=PL8DnvzPrESxIevsaHfU1ZL2ZjcyB-L5kP&index=3">here</a>!</h3></div>
+  <span class="popup-btn-close">&times;</span>
+</div>
+<div id="popup3" class="popup">
+  <div class="popup-text"><iframe style="width: 90%; height:78%;" src="https://www.youtube.com/embed/u7pek0RGBIY?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe><h3 align="center" style="color: white; width: 80%; padding-left: 10%;"><br><br>- Stuyvesant Volleyball Promo 2018 - <br>Made in preparation for the 2018 Boys' Volleyball season at my high school to invite students to tryouts.</h3></div>
+  <span class="popup-btn-close">&times;</span>
+</div>
+<div id="popup4" class="popup">
+  <div class="popup-text"><iframe style="width: 90%; height:78%;" src="https://www.youtube.com/embed/6wKQqhtTQrY?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe><h3 align="center" style="color: white; width: 80%; padding-left: 10%;"><br><br>- Pulcherrima Roma - <br>Made on a study abroad trip to Rome, Italy in the summer of 2017.</h3></div>
+  <span class="popup-btn-close">&times;</span>
+</div>
+<div id="popup5" class="popup">
+  <div class="popup-text"><iframe style="width: 90%; height:78%;" src="https://www.youtube.com/embed/E2EnVWdiFRo?rel=0&amp;&amp;showinfo=0" frameborder="0" allowfullscreen ></iframe><h3 align="center" style="color: white; width: 80%; padding-left: 10%;"><br><br>- Thermaikos Kolpos - <br>Made on a study abroad trip to Thessaloniki, Greece in the summer of 2016.</h3></div>
+  <span class="popup-btn-close">&times;</span>
+</div>
+<div id="popup6" class="popup">
+  <div class="popup-text"><iframe style="width: 90%; height:78%;" src="https://www.youtube.com/embed/1386nfEOQFo?rel=0&amp;&amp;showinfo=0" frameborder="0" allowfullscreen ></iframe><h3 align="center" style="color: white; width: 80%; padding-left: 10%;"><br><br>- The Trashcan - <br>Made at a program at The New York Film Academy in the summer of 2015.</h3></div>
+  <span class="popup-btn-close">&times;</span>
+</div>
+<div id="popup7" class="popup">
+  <div class="popup-text"><iframe style="width: 90%; height:78%;" src="https://www.youtube.com/embed/ECXx0O15Hdo?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen ></iframe><h3 align="center" style="color: white; width: 80%; padding-left: 10%;"><br><br>- Khan's Tutorial Scholarship Promo - <br>Made for the Khan's Tutorial tutoring company to highlight the winners of their 2017 Mansur Khan scholarship.</h3></div>
+  <span class="popup-btn-close">&times;</span>
+</div>
+<div id="popup8" class="popup">
+  <div class="popup-text"><iframe style="width: 90%; height:78%;" src="https://www.youtube.com/embed/JJ3sfmJIqjE?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe><h3 align="center" style="color: white; width: 80%; padding-left: 10%;"><br><br>- Skate (Ben Crane) - <br>Made for an amateur skateboarder as a montage of some of his skills in the summer of 2017.</h3></div>
+  <span class="popup-btn-close">&times;</span>
+</div>
+<div id="popup9" class="popup">
+  <div class="popup-text"><iframe style="width: 90%; height:78%;" src="https://www.youtube.com/embed/nXBW0kGxYfg?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe><h3 align="center" style="color: white; width: 80%; padding-left: 10%;"><br><br>- Snow in Brooklyn - <br>Made during the first snowfall in brooklyn during the winter of 2016.</h3></div>
+  <span class="popup-btn-close">&times;</span>
+</div>
+<div id="popup10" class="popup">
+  <div class="popup-text"><iframe style="width: 90%; height:78%;" src="https://www.youtube.com/embed/x7tI2RQcECo?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe><h3 align="center" style="color: white; width: 80%; padding-left: 10%;">- Killer - <br>I am deeply aware of the terrible and terrifying issue of gun violence in our society. The somewhat graphic imagery in this dramatization is an exploration of the fear that I and so many others certainly feel in the country today.</h3></div>
+  <span class="popup-btn-close">&times;</span>
+</div>
+
+
+
+<style type="text/css">
+  .buttons a {
+  font-size: 16px;
+}
+.buttons a:hover {
+  cursor:pointer; 
+  font-size: 16px;
+}
+
+</style>
+
+<script type="text/javascript">
+function popupOpenClose(popup) {
+
+  /* Add div inside popup for layout if one doesn't exist */
+  if ($(".wrapper", popup).length == 0) {
+    $(popup).wrapInner("<div class='wrapper'></div>");
+  }
+
+  /* Open popup */
+  $(popup).fadeIn();
+
+  /* Close popup if user clicks on background */
+  $(popup).click(function(e) {
+    if (e.target == this) {
+      if ($(popup).is(':visible')) {
+        $(popup).fadeOut();
+        player.stopVideo();
+      }
+    }
+  });
+
+  /* Close popup and remove errors if user clicks on cancel or close buttons */
+  $(popup).find(".popup-btn-close").on("click", function() {
+    if ($(".formElementError").is(':visible')) {
+      $(".formElementError").remove();
+    }
+    $(popup).fadeOut();
+    $(player).stopVideo();
+    });
+}
+
+$(document).ready(function() {
+  $(".popup-trigger").on("click", function() {
+    var target = $(this).data('target');
+    popupOpenClose($(target));
+  });
+});
+</script>
+
+<!--END-->
+<!-- PROCESS-->
+</heyheyhey>
+</body>
+</html>

@@ -1,0 +1,534 @@
+#myVideo {
+    position: fixed;
+top: -10;
+left: -10;
+
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: -100000000;
+}
+
+heyheyhey {
+    font-size: 1vw;
+
+}
+
+#daBar {
+    z-index: 9; 
+box-shadow: inset 0px 0px 50px -50px #D4D4CC, inset 0px -50px 50px -50px #D4D4CC;
+position: fixed;
+display: none;
+}
+
+.darker {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 1000%;
+    z-index: -10000000;
+    background-color: #000000;
+    opacity: 0.4;
+    background-repeat: 100%;
+}
+
+.darker2 {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -10000000;
+    background-color: #000000;
+    opacity: 0.4;
+    background-repeat: 100%;
+}
+
+.pictureContainer {
+  background: url(../headshot_home.png);
+  width: 256px;
+  height: 256px;
+  border-radius: 50%;
+  display: inline-block;
+      -o-transition:1s;
+  -ms-transition:1s;
+  -moz-transition:1s;
+  -webkit-transition:1s;
+  /* ...and now for the proper property */
+  transition:1s;
+}
+.pictureContainer:hover {
+  background: url(../youtube_fade.png);
+
+    -o-transition:1s;
+  -ms-transition:1s;
+  -moz-transition:1s;
+  -webkit-transition:1s;
+  /* ...and now for the proper property */
+  transition:1s;
+
+}
+
+.pictureContainer2 {
+  background: url(../headshot3.png);
+  width: 23.33333333%;
+  height: 23.33333333%;
+  border-style: solid;
+  display: inline-block;
+      -o-transition:1s;
+  -ms-transition:1s;
+  -moz-transition:1s;
+  -webkit-transition:1s;
+  /* ...and now for the proper property */
+  transition:1s;
+}
+
+.grad {
+
+height: 10px;
+width: 100%;
+bottom: 0px;
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(red, yellow); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(red, yellow); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(red, yellow); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(red, yellow); /* Standard syntax */
+}
+
+h9 {font-family: courier new;
+	font-weight: lighter;
+    font-size: 3vw;
+/*	font-size: 36px; */
+	text-align: center;
+	}
+
+descript {font-family: courier new;
+	font-weight: lighter;
+	font-size: 0.836111111vw;
+	}
+
+h1 {font-family: courier new;
+	font-weight: lighter;
+	font-size: 75px;
+	text-align: center;
+	}
+
+h2 {
+    font-family: courier new;
+	font-weight: lighter;
+    text-align: right; 
+    color:white;
+	}
+
+
+h3 {font-family: courier new;
+    font-weight: lighter;
+	font-color: black;
+    font-size: 1.5vw;
+/*	font-size: 19px; */
+	}
+
+
+h4 {font-family: courier new;
+    font-color: black;
+    font-size: 19px;
+    }
+
+
+categories {font-family: courier new;
+	font-weight: lighter;
+	font-color: black;
+	font-size: 19px;
+	}
+
+h6 {font-family: courier new;
+	font-weight: lighter;
+	font-color: black;
+	font-size: 41px;
+	}
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: #7F7F7F;
+
+}
+
+a:active {
+    color: #eee9e9;
+}
+
+#motion {
+	padding-left: 20px;
+
+}
+
+
+#bigintro {
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    width:30em;
+    height:18em;
+    margin-top: -9em; /*set to a negative number 1/2 of your height*/
+    margin-left: -15em; /*set to a negative number 1/2 of your width*/
+    border: 1px solid #ccc;
+    background-color: #f3f3f3;
+}
+
+.mainthing {
+	align-items: center;
+	
+}
+
+
+captions {
+font-family: courier new;
+	font-weight: lighter;
+	font-size: 19px;
+	text-align: right;
+
+}
+
+pagetitle {font-family: courier new;
+	font-weight: lighter;
+	font-size: 6vw;
+	}
+
+img {
+    image-orientation: from-image;
+}
+
+
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+h8 {
+font-family: courier new;
+  font-weight: lighter;
+  font-size: 40px;
+    text-align: center;
+}
+
+    
+    .content-wrapper >div{
+display:none;
+}
+
+.popup-trigger {
+    align-content: center;
+text-align: center;
+  cursor: pointer;
+} 
+.popup-trigger:hover {
+    opacity: 0.8;
+    transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+
+} 
+.popup {
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  display: none;
+  z-index: 5000;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  text-align: center;
+
+}
+
+.popup>div {
+  border-radius: 10px;
+  position: relative;
+  background: black;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+  /* Width of popup can be changed */
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 5001;
+  text-align: center;
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  text-align: left;
+  border: 5px solid #ffffff;
+  width: 70%;
+
+  padding-bottom: 50%;
+    }
+
+@media only screen and (max-height: 1200px) {
+    .popup>div {
+        height: 70%;
+        padding-left: 50%;    
+
+    }
+    
+}
+.popup-btn-close {
+  position: absolute;
+  background-color: #ffffff;
+  color: black;
+  top: -15px;
+  right: -15px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Arial Black', Arial, sans-serif;
+  cursor: pointer;
+  -webkit-box-shadow: -4px -2px 6px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: -4px -2px 6px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: -3px 1px 6px 0px rgba(0, 0, 0, 0.1);
+  z-index: 10000;
+}
+
+.popup-btn-close:hover {
+  background-color: gray;
+  color: #000;
+}
+
+.popup-text {
+    border-radius: 10px;
+    width: 100%;
+    height: 90%;
+    padding-top: 5%;
+    position: absolute;
+  background: black;
+  color: #333;
+  z-index: 9999;
+  text-align: center;
+ }
+
+td:hover {
+    color: blue;
+
+}
+
+.stretchy-wrapper {
+  width: 50%;
+  padding-top: 50%;
+position: relative; 
+}
+
+
+
+.thepop{
+    width:25%; 
+    display:inline-block;    
+ text-align: center;
+}
+
+
+@media only screen and (max-width: 10000px) {
+    
+    .thepop{
+        width:24%;
+    }
+
+    h2{
+            font-size: 3.5vw; 
+
+    }
+    h5{
+            text-align: right; 
+    font-size: 2vw;
+
+    }
+
+
+}
+
+@media only screen and (max-width: 1500px) {
+
+    .thepop {
+        width: 32%;
+    }
+
+    h2{
+        font-size: 3.5vw; 
+
+    }
+    h5{
+            text-align: right; 
+    font-size: 2vw;
+
+    }
+
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .thepop {
+        width: 49%;
+    }
+    h2{
+        font-size: 3.5vw; 
+
+    }
+    h5{
+            text-align: right; 
+    font-size: 2vw;
+
+    }
+
+}
+
+.OnePhoto{
+width: 30%; 
+float: left;
+}
+
+.TwoAboutMe{
+width: 65%; 
+padding-left: 5%; 
+float: left;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .thepop {
+        width: 100%;
+    }
+
+    .OnePhoto{
+        float:none;
+        width:70%;
+        text-align: center;
+    }
+
+    .TwoAboutMe{
+        float: none;
+        width: 100%;
+        text-align: center;
+        padding-left: 0%;
+    }
+
+    .containabout{
+    }
+    
+    h2 {
+        font-size: 7vw;
+        text-align: center;
+    }
+
+    h5{
+        text-align: center;
+            font-size: 3.5vw;
+
+
+    }
+.fa-youtube {
+    background: #ff3300;
+    color: white;
+}
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+.fa-instagram {
+    background: #0066cc;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #3399ff;
+    color: white;
+}
+.fa-envelope {
+    background: orange;
+    color: white;
+}
+
+}
+
+h5 {
+    font-family: courier new; 
+    font-weight: lighter; 
+    color:white; 
+}
+
+.thecontain {
+        display:inline-block;    
+text-align: center; 
+width: 90%;
+}
+.thesupercontain {
+        display:inline-block;    
+text-align: center; 
+width: 100%;
+}
+
+.icons-wrapper{
+    width: 100%;
+bottom: 5;
+position: fixed;
+left: 50%;
+float:left;
+margin-left: -175px;"
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    color: white;
+}
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+.fa-youtube {
+    background: #ff3300;
+    color: white;
+}
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+.fa-instagram {
+    background: #0066cc;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #3399ff;
+    color: white;
+}
+.fa-envelope {
+    background: orange;
+    color: white;
+}
